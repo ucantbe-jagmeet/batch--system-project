@@ -17,9 +17,9 @@ const footerData: FooterData = {
 
 const Footer: React.FC = () => {
   return (
-    <main className="h-[80vh] lg:w-[1180px] mx-auto my-20">
-      <div className=" grid grid-cols-6 ">
-        <ul className="flex gap-y-5 flex-col ">
+    <main className="h-[80vh] lg:w-[1180px] mx-10 lg:mx-auto my-20">
+      <div className=" grid grid-cols-6 gap-y-5">
+        <ul className="flex gap-y-5 flex-col col-span-3 md:col-span-2 lg:col-span-1">
           <li>
             <Logo />
           </li>
@@ -36,7 +36,10 @@ const Footer: React.FC = () => {
         </ul>
 
         {Object.keys(footerData).map((key, index) => (
-          <ul key={index} className="flex gap-y-5 flex-col col-span-1">
+          <ul
+            key={index}
+            className="flex gap-y-5 flex-col  col-span-3 md:col-span-2 lg:col-span-1"
+          >
             <li className="font-bold capitalize text-3xl tracking-wider">
               {key}
             </li>
@@ -51,7 +54,7 @@ const Footer: React.FC = () => {
           </ul>
         ))}
 
-        <ul className="flex gap-y-5 flex-col col-span-1">
+        <ul className="flex gap-y-5 flex-col col-span-3 md:col-span-2 lg:col-span-1">
           <li className="font-bold capitalize text-3xl tracking-wider">
             Newsletter
           </li>

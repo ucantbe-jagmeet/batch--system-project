@@ -5,8 +5,8 @@ import BellIcon from "../../public/assets/bell-icon.png";
 
 const Advantages = () => {
   return (
-    <div className="relative h-screen grid grid-flow-col grid-cols-7 lg:w-[1180px] mx-auto my-10 overflow-hidden ">
-      <div className="col-span-3 flex flex-col justify-center ">
+    <div className="relative h-screen grid grid-flow-col grid-cols-7 lg:w-[1180px] px-10 lg:px-0 lg:mx-auto my-10 overflow-hidden ">
+      <div className="lg:col-span-3 col-span-7 flex flex-col justify-center ">
         <div>
           <h2 className="text-[#FF5555] tracking-widest text-xl">Advantages</h2>
           <h1 className="text-black text-[3rem]  font-extrabold">
@@ -34,7 +34,7 @@ const Advantages = () => {
         </div>
       </div>
       <div className="relative col-span-4  z-2">
-        <div className="absolute z-20 scale-125 transform">
+        <div className="absolute z-20 scale-125 transform hidden lg:block">
           <Image
             src={Img}
             width={800}

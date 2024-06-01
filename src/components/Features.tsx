@@ -27,9 +27,9 @@ const FeaturesData = [
 
 const Features = () => {
   return (
-    <div className="relative h-screen grid grid-flow-col grid-cols-7 overflow-hidden">
-      <div className="relative col-span-4 px-20">
-        <div className="relative z-10">
+    <div className="relative h-screen grid grid-flow-col grid-cols-7 overflow-hidden ">
+      <div className="relative lg:col-span-4 px-20">
+        <div className="relative z-10 hidden lg:block">
           <Image
             src={Img}
             width={800}
@@ -47,10 +47,12 @@ const Features = () => {
           />
         </div>
       </div>
-      <div className="col-span-3 flex flex-col justify-center -ml-20 w-5/6 relative">
+      <div className="lg:col-span-3 col-span-7 flex flex-col justify-center lg:-ml-20  lg:w-5/6 relative">
         <div>
           <h2 className="text-[#FF5555] tracking-widest text-xl">FEATURES</h2>
-          <h1 className="text-black text-[4rem] font-bold">Uifry Premium</h1>
+          <h1 className="text-black lg:text-[4rem] text-5xl font-bold">
+            Uifry Premium
+          </h1>
         </div>
         <div className="mt-5">
           {FeaturesData.map((item, index) => (
@@ -65,11 +67,13 @@ const Features = () => {
                 />
                 <span className="font-bold text-lg">{item.title}</span>
               </h2>
-              <p className="my-5 text-gray-700 tracking-wide">{item.text}</p>
+              <p className="my-5 text-gray-700 tracking-wide w-4/5 lg:w-full">
+                {item.text}
+              </p>
             </div>
           ))}
         </div>
-        <div className="absolute top-[300px] -right-[150px] transform translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] scale-115 z-0">
+        <div className="absolute top-[300px] -right-[150px] transform translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] scale-115 z-0 ">
           <Image
             src={ColorDrop}
             alt="ColorDrop"

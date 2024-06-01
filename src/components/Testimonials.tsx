@@ -6,18 +6,18 @@ import ColorDrop from "../../public/assets/color-ring.png";
 import Image from "next/image";
 const Testimonials = () => {
   return (
-    <main className="h-screen w-[1180px] mx-auto">
+    <main className="h-screen lg:w-[1180px] mx-10 lg:mx-auto">
       <div className="flex justify-center flex-col  items-center mb-10">
         <h2 className="text-[#FF5555] tracking-widest text-xl uppercase">
           Testimonials
         </h2>
-        <h1 className="text-black text-[4rem] font-bold leading-[60px]">
+        <h1 className="text-black text-4xl lg:text-[4rem] font-bold lg:leading-[60px] leading-[40px]">
           What Our Users <br />
           Say About Us ?
         </h1>
       </div>
       <div className="relative flex">
-        <div className="relative w-1/2 ">
+        <div className="relative w-1/2 lg:flex hidden">
           <div className="relative z-10">
             <Image
               src={Img1}
@@ -36,8 +36,8 @@ const Testimonials = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center  relative w-1/2 pl-20">
-          <h1 className="text-black text-[2rem] font-bold capitalize leading-10 mb-4">
+        <div className="flex flex-col justify-center  relative lg:w-1/2 w-full lg:pl-20">
+          <h1 className="text-black text-2xl lg:text-[2rem] font-bold capitalize lg:leading-10 mb-4">
             the best financial accounting app ever!
           </h1>
           <p className="tracking-wide text-xl text-gray-500">

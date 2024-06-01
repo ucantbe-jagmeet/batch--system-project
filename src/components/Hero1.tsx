@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <main className="h-[150vh] w-full pt-10  ">
       <Navbar />
-      <div className="grid col-span-7 grid-flow-col lg:w-[1180px] mx-auto">
+      <div className="grid col-span-7 grid-flow-col lg:w-[1180px] lg:mx-auto mx-10">
         <div className="relative col-span-2 grid gap-y-9 my-20">
           <h1 className="font-bold text-[4rem] leading-tight">
             Make The Best
@@ -37,7 +37,7 @@ const Hero = () => {
               <h2 className="text-xl ml-2">Watch Video</h2>
             </button>
           </div>
-          <div className="absolute w-full h-full transform -rotate-3 translate-x-10 -translate-y-20 scale-110 -z-10">
+          <div className="absolute w-full h-full transform -rotate-3 translate-x-10 -translate-y-20 lg:scale-110 scale-90 -z-10 ">
             <Image
               src={ColorDrop}
               alt="ColorDrop"
@@ -45,16 +45,11 @@ const Hero = () => {
               objectFit="contain"
             />
           </div>
-          <div className="absolute w-full h-full transform  translate-x-0 translate-y-[450px] scale-150 ">
-            <Image
-              src={Strip}
-              alt="ColorDrop"
-              layout="fill"
-              objectFit="contain"
-            />
+          <div className="absolute hidden lg:block lg:w-full lg:h-full transform  translate-x-0 translate-y-[450px] scale-150 ">
+            <Image src={Strip} alt="strip" layout="fill" objectFit="contain" />
           </div>
         </div>
-        <div className="col-span-5 image-container ">
+        <div className="col-span-5 image-container hidden lg:block">
           <Image src={Iphone1} width={500} height={700} alt="Iphone 13" />
           <Image src={Iphone2} width={500} height={700} alt="Iphone 13" />
           <Image src={Iphone3} width={500} height={700} alt="Iphone 13" />
