@@ -5,6 +5,7 @@ import {
   Testimonials,
   Faq,
   Promo,
+  Footer,
 } from "@/components";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Testimonials />
       <Faq />
       <Promo />
+      <Footer />
     </main>
   );
 }
