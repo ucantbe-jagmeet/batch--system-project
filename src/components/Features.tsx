@@ -27,7 +27,7 @@ const FeaturesData = [
 
 const Features = () => {
   return (
-    <div className="relative h-screen grid grid-flow-col grid-cols-7 overflow-hidden ">
+    <div className="relative h-screen grid grid-flow-col grid-cols-7 overflow-hidden dark:bg-black">
       <div className="relative lg:col-span-4 px-20">
         <div className="relative z-10 hidden lg:block">
           <Image
@@ -49,8 +49,10 @@ const Features = () => {
       </div>
       <div className="lg:col-span-3 col-span-7 flex flex-col justify-center lg:-ml-20  lg:w-5/6 relative">
         <div>
-          <h2 className="text-[#FF5555] tracking-widest text-xl">FEATURES</h2>
-          <h1 className="text-black lg:text-[4rem] text-5xl font-bold">
+          <h2 className="text-[#FF5555] dark:text-[#76e688] tracking-widest text-xl">
+            FEATURES
+          </h2>
+          <h1 className="text-black lg:text-[4rem] text-5xl font-bold dark:text-white">
             Uifry Premium
           </h1>
         </div>
@@ -63,11 +65,13 @@ const Features = () => {
                   alt="img"
                   width={28}
                   height={28}
-                  className="mr-2"
+                  className="mr-2 "
                 />
-                <span className="font-bold text-lg">{item.title}</span>
+                <span className="font-bold text-lg dark:text-white">
+                  {item.title}
+                </span>
               </h2>
-              <p className="my-5 text-gray-700 tracking-wide w-4/5 lg:w-full">
+              <p className="my-5 text-gray-700 tracking-wide w-4/5 lg:w-full dark:text-gray-400">
                 {item.text}
               </p>
             </div>

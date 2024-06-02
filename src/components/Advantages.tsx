@@ -5,11 +5,13 @@ import BellIcon from "../../public/assets/bell-icon.png";
 
 const Advantages = () => {
   return (
-    <div className="relative h-screen grid grid-flow-col grid-cols-7 lg:w-[1180px] px-10 lg:px-0 lg:mx-auto my-10 overflow-hidden ">
+    <div className="relative h-screen grid grid-flow-col grid-cols-7 lg:w-[1180px] px-10 lg:px-0 lg:mx-auto my-10 overflow-hidden dark:bg-black">
       <div className="lg:col-span-3 col-span-7 flex flex-col justify-center ">
         <div>
-          <h2 className="text-[#FF5555] tracking-widest text-xl">Advantages</h2>
-          <h1 className="text-black text-[3rem]  font-extrabold">
+          <h2 className="text-[#FF5555] dark:text-[#76e688] tracking-widest text-xl">
+            Advantages
+          </h2>
+          <h1 className="text-black text-[3rem]  font-extrabold dark:text-white">
             why choose Uifry?
           </h1>
         </div>
@@ -22,9 +24,11 @@ const Advantages = () => {
               height={28}
               className="mr-2"
             />
-            <span className="font-bold text-lg">Clever Notifications</span>
+            <span className="font-bold text-lg dark:text-white">
+              Clever Notifications
+            </span>
           </h2>
-          <p className="my-5 text-gray-500 tracking-widest leading-7 capitalize">
+          <p className="my-5 text-gray-500 dark:text-gray-400 tracking-widest leading-7 capitalize">
             Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies.
             In ultrices malesuada elit mauris etiam odio. Duis tristique lacus,
             et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse

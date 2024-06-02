@@ -17,6 +17,7 @@
 }
 */
 body {
+  /* @apply bg-white dark:bg-dark; */
   font-family: 'Clash Display', sans-serif;
   /* color: rgb(var(--foreground-rgb)); */
   /* background: linear-gradient( */
