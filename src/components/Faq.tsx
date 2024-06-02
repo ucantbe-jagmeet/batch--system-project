@@ -27,7 +27,9 @@ const Faq = () => {
             <div
               key={item}
               className={` ${
-                item % 2 !== 0 ? "bg-[#FF5555]   text-white" : "text-black"
+                item % 2 !== 0
+                  ? "bg-[#FF5555]   text-white"
+                  : "text-black dark:text-white"
               }   ${bgColor} ${textColor} capitalize w-full lg:h-[181px] p-5 rounded lg:w-[535px] flex items-center flex-col`}
             >
               <h1 className="font-bold lg:text-3xl text-2xl tracking-wider">

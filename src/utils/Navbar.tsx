@@ -25,8 +25,10 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <ThemeToggle />
-      <Button text="Download" icon={false} />
+      <div className="flex item-center space-x-5">
+        <ThemeToggle />
+        <Button text="Download" icon={false} />
+      </div>
     </div>
   );
 };
