@@ -13,16 +13,16 @@ import Strip from "../../public/assets/strip.png";
 
 const Hero = () => {
   return (
-    <main className="h-[150vh] w-full pt-10  ">
+    <main className="h-[150vh] w-full pt-10 dark:bg-black ">
       <Navbar />
       <div className="grid col-span-7 grid-flow-col lg:w-[1180px] lg:mx-auto mx-10">
         <div className="relative col-span-2 grid gap-y-9 my-20">
-          <h1 className="font-bold text-[4rem] leading-tight">
+          <h1 className="font-bold text-[4rem] leading-tight dark:text-white">
             Make The Best
             <br /> Financial Decisions
           </h1>
 
-          <p className="text-xl">
+          <p className="text-xl dark:text-gray-500">
             Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet{" "}
             <br />
             faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
@@ -30,11 +30,17 @@ const Hero = () => {
           <div className="flex ">
             <Button text="Get Started" icon={true} className="mr-5" />
             <button
-              className="flex items-center justify-center w-44 h-[3.75rem rounded cursor-pointer"
+              className="flex items-center justify-center w-44 h-[3.75rem rounded cursor-pointer "
               type="button"
             >
-              <Image src={PlayIcon} width={30} height={30} alt="play icon" />
-              <h2 className="text-xl ml-2">Watch Video</h2>
+              <Image
+                src={PlayIcon}
+                width={30}
+                height={30}
+                alt="play icon "
+                className="dark:bg-white dark:rounded-full"
+              />
+              <h2 className="text-xl ml-2 dark:text-white">Watch Video</h2>
             </button>
           </div>
           <div className="absolute w-full h-full transform -rotate-3 translate-x-10 -translate-y-20 lg:scale-110 scale-90 -z-10 ">

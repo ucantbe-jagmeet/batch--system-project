@@ -9,11 +9,13 @@ interface IButton {
 const Button = ({ text, icon, className }: IButton) => {
   return (
     <button
-      className={`flex items-center justify-center w-44 h-[3.75rem] bg-black rounded cursor-pointer ${className} `}
+      className={`flex items-center justify-center w-44 h-[3.75rem] bg-black rounded cursor-pointer dark:bg-white dark:border-2 dark:border-black text-black ${className} `}
       type="button"
     >
-      <h2 className="text-white text-xl">{text}</h2>
-      {icon ? <h2 className="text-white ml-1">{"-->"}</h2> : null}
+      <h2 className="text-white text-xl dark:text-black ">{text}</h2>
+      {icon ? (
+        <h2 className="text-white ml-1 dark:text-black">{"-->"}</h2>
+      ) : null}
     </button>
   );
 };

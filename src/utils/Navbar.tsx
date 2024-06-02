@@ -14,7 +14,9 @@ const Navbar = () => {
               <li
                 key={index}
                 className={`font-semibold text-xl ${
-                  index === 0 ? "text-[#FF5555]" : "text-black dark:text-white"
+                  index === 0
+                    ? "text-[#FF5555] dark:text-[#76e688]"
+                    : "text-black dark:text-white"
                 }`}
               >
                 {item}
