@@ -17,7 +17,7 @@ const footerData: FooterData = {
 
 const Footer: React.FC = () => {
   return (
-    <main className="h-[80vh] lg:w-[1180px] mx-10 lg:mx-auto my-20">
+    <main className="h-[80vh] lg:w-[1180px] mx-10 lg:mx-auto mt-20">
       <div className=" grid grid-cols-6 gap-y-5">
         <ul className="flex gap-y-5 flex-col col-span-3 md:col-span-2 lg:col-span-1">
           <li>
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             key={index}
             className="flex gap-y-5 flex-col  col-span-3 md:col-span-2 lg:col-span-1"
           >
-            <li className="font-bold capitalize text-3xl tracking-wider">
+            <li className="font-bold capitalize text-3xl tracking-wider dark:text-[#76e688]">
               {key}
             </li>
             {footerData[key].map((item, subIndex) => (
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
         ))}
 
         <ul className="flex gap-y-5 flex-col col-span-3 md:col-span-2 lg:col-span-1">
-          <li className="font-bold capitalize text-3xl tracking-wider">
+          <li className="font-bold capitalize text-3xl tracking-wider dark:text-[#76e688]">
             Newsletter
           </li>
           <li className="font-semibold text-gray-600">Stay Up To Date</li>
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="p-2 border rounded-l-md w-full"
+                className="p-2 border rounded-l-md w-full dark:bg-black"
               />
             </form>
           </li>
