@@ -1,9 +1,9 @@
-import Hero1 from "./Hero1";
-import Features from "./Features";
-import Advantages from "./Advantages";
-import Testimonials from "./Testimonials";
-import Faq from "./Faq";
-import Promo from "./Promo";
-import Footer from "./Footer";
+// components/index.ts
 
-export { Hero1, Features, Advantages, Testimonials, Faq, Promo, Footer };
+export { default as Hero1 } from "./Hero1";
+export { default as Features } from "./Features";
+export { default as Advantages } from "./Advantages";
+export { default as Testimonials } from "./Testimonials";
+export { default as Faq } from "./Faq";
+export { default as Promo } from "./Promo";
+export { default as Footer } from "./Footer";
