@@ -1,7 +1,6 @@
 import React from "react";
 import Img from "../../public/assets/featuresIphone.png";
 import Image from "next/image";
-
 import icon1 from "../../public/assets/feat-icon-1.png";
 import icon2 from "../../public/assets/feat-icon-2.png";
 import icon3 from "../../public/assets/feat-icon-3.png";
